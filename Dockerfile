@@ -12,4 +12,4 @@ WORKDIR /go/src/github.com/dongri/gonion
 RUN go install github.com/dongri/gonion
 
 CMD ["/go/bin/gonion"] 
-EXPOSE 3000
+EXPOSE 3001
