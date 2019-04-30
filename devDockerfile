@@ -1,15 +1,11 @@
 FROM golang:1.12.4-alpine
 LABEL  maintainer "Dongri Jin <dongrify@gmail.com>"
 
-RUN apk add --update alpine-sdk
-
-# ENV
-ARG go_env
-ENV GO_ENV $go_env
+RUN apk add --no-cache git
+RUN go get -u github.com/githubnemo/CompileDaemon
 
 ADD . /go/src/github.com/dongri/gonion
 WORKDIR /go/src/github.com/dongri/gonion
-RUN go install github.com/dongri/gonion
 
-CMD ["/go/bin/gonion"] 
-EXPOSE 3000
+CMD PORT=3001 CompileDaemon -command="./gonion"
+EXPOSE 3001

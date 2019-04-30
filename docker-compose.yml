@@ -5,7 +5,7 @@ services:
     container_name: gonion
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: devDockerfile
     environment:
       - GO_ENV=docker
       - POSTGRES_URI=${GONION_POSTGRES_URI}
