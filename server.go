@@ -32,11 +32,6 @@ func main() {
 		port = defaultPort
 	}
 
-	// cologhook(env)
-
-	// Register pongo2 Filter
-	//setPongoFilters()
-
 	environments.SetEnvironment(env)
 
 	// setup postgres
@@ -58,25 +53,3 @@ func main() {
 	fmt.Printf("Server listening on port %s in %s mode.\n", port, env)
 	http.ListenAndServe(":"+port, rooter)
 }
-
-// func setPongoFilters() {
-// 	pongo2.RegisterFilter("gravatar", func(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pongo2.Error) {
-// 		s, ok := in.Interface().(string)
-// 		if !ok {
-// 			return pongo2.AsValue(helpers.GravatarIcon("x")), nil
-// 			// return nil, &pongo2.Error{
-// 			// 	Sender:   "gravatar",
-// 			// 	ErrorMsg: fmt.Sprintf("some error %T ('%v')", in, in),
-// 			// }
-// 		}
-// 		return pongo2.AsValue(helpers.GravatarIcon(s)), nil
-// 	})
-
-// 	pongo2.RegisterFilter("generatelogo", func(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pongo2.Error) {
-// 		s, ok := in.Interface().(string)
-// 		if !ok {
-// 			return pongo2.AsValue(helpers.GenerateLogo("1")), nil
-// 		}
-// 		return pongo2.AsValue(helpers.GenerateLogo(s)), nil
-// 	})
-// }
