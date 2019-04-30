@@ -1,0 +1,30 @@
+.footer {
+  padding: 20px;
+}
+.navbar-brand {
+  margin-left: -5px !important;
+}
+.navbar-brand a {
+  font-weight: bolder;
+  color: white;
+}
+.navbar-brand a:hover {
+  color: white;
+}
+.navbar-brand > .navbar-item {
+  background: #444;
+  margin: 5px;
+  border-radius: 5px;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: 0px !important;
+}
+.navbar-brand > .navbar-item:hover {
+  background: #444 !important;
+}
+
+.body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 600px;
+}

@@ -1,0 +1,26 @@
+{% extends "../layouts/base.html" %}
+
+{% block title %} Sign In {% endblock %}
+
+{% block content %}
+<div class="account">
+  <h1 class="title is-1">Products</h1>
+  <table style="width: 100%">
+    <tr>
+      <td>Name</td><td>Price</td><td></td>
+    </tr>
+    {% for product in products %}
+    <tr>
+      <td>{{ product.Name }}</td>
+      <td>{{ product.Price }}</td>
+      <td>
+        <a href="/products/{{product.ID}}">Show</a>
+        <a href="/products/{{product.ID}}/edit">Edit</a>
+        <a href="/products/{{product.ID}}">Destory</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a href="/products/new">New product</a>
+</div>
+{% endblock %}

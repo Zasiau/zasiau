@@ -1,0 +1,32 @@
+<section class="hero">
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">Gonion</a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="tabs is-right">
+              <ul>
+                <li><a href="/">Home</a></li>
+                {% if logged_in == true %}
+                <li><a href="/products">Products</a></li>
+                <li><a href="/logout">Logout</a></li>
+                {% else %}
+                <li><a href="/signin">Sign In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>

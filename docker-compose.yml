@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  gonion:
+    container_name: gonion
+    build:
+      context: .
+      dockerfile: devDockerfile
+    environment:
+      - GO_ENV=docker
+      - POSTGRES_URI=${GONION_POSTGRES_URI}
+    volumes:
+      - .:/go/src/github.com/dongri/gonion
+    logging:
+      options:
+        max-size: "500k"
+    ports:
+      - "127.0.0.1:3001:3001"

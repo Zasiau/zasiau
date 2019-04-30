@@ -1,0 +1,17 @@
+{% extends "../layouts/base.html" %}
+
+{% block title %} Sign Up {% endblock %}
+
+{% block content %}
+<div class="account">
+  <h1 class="title is-1">Show Product</h1>
+  <div class="field">
+    <label class="label">Name</label>
+    <div class="control">{{ product.Name }}</div>
+  </div>
+  <div class="field">
+    <label class="label">Price</label>
+    <div class="control">{{ product.Price }}</div>
+  </div>
+</div>
+{% endblock %}
