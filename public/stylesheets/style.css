@@ -35,3 +35,7 @@ table {
 td {
   padding: 5px;
 }
+.home {
+  text-align: center;
+  margin: 100px;
+}
