@@ -5,6 +5,5 @@ import "os"
 type production struct{}
 
 func (c production) PostgresURI() string {
-	return os.Getenv("POSTGRES_URI")
-
+	return os.Getenv("DATABASE_URL")
 }
