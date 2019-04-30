@@ -5,9 +5,9 @@
 {% block content %}
 <div class="account">
   <h1 class="title is-1">Products</h1>
-  <table style="width: 100%">
+  <table>
     <tr>
-      <td>Name</td><td>Price</td><td></td>
+      <th>Name</th><th>Price</th><th></th>
     </tr>
     {% for product in products %}
     <tr>
@@ -15,7 +15,9 @@
       <td>{{ product.Price }}</td>
       <td>
         <a href="/products/{{product.ID}}">Show</a>
+        &nbsp;
         <a href="/products/{{product.ID}}/edit">Edit</a>
+        &nbsp;
         <a href="/products/{{product.ID}}">Destory</a>
       </td>
     </tr>

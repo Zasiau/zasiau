@@ -28,3 +28,10 @@
   margin-bottom: 20px;
   min-height: 600px;
 }
+
+table {
+  width: 100%;
+}
+td {
+  padding: 5px;
+}
