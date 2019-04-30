@@ -9,6 +9,7 @@
 
 ## heroku
 ```
+$ heroku ps:scale web=1
 $ heroku container:release web
 $ heroku container:release web
 ```
