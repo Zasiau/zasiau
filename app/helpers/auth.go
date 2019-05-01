@@ -3,7 +3,7 @@ package helpers
 import (
 	"net/http"
 
-	"github.com/dongri/gonion/app/middlewares/session"
+	"github.com/dongri/candle/app/middlewares/session"
 )
 
 const (

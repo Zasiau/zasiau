@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/dongri/gonion/app/helpers"
-	"github.com/dongri/gonion/app/middlewares/render"
-	"github.com/dongri/gonion/app/services"
+	"github.com/dongri/candle/app/helpers"
+	"github.com/dongri/candle/app/middlewares/render"
+	"github.com/dongri/candle/app/services"
 	"github.com/mholt/binding"
 )
 

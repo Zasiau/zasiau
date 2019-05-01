@@ -1,4 +1,4 @@
-# Gonion
+# candle
 
 * pongo2
 * chi
@@ -14,4 +14,4 @@ $ heroku container:push web
 $ heroku container:release web
 ```
 
-https://gonion.herokuapp.com
+https://candle.herokuapp.com

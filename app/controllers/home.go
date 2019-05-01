@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/dongri/gonion/app/middlewares/render"
+	"github.com/dongri/candle/app/middlewares/render"
 )
 
 // HomeIndexHandler ...

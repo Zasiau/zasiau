@@ -1,16 +1,16 @@
 version: "3"
 
 services:
-  gonion:
-    container_name: gonion
+  candle:
+    container_name: candle
     build:
       context: .
       dockerfile: devDockerfile
     environment:
       - GO_ENV=docker
-      - POSTGRES_URI=${GONION_POSTGRES_URI}
+      - POSTGRES_URI=${candle_POSTGRES_URI}
     volumes:
-      - .:/go/src/github.com/dongri/gonion
+      - .:/go/src/github.com/dongri/candle
     logging:
       options:
         max-size: "500k"

@@ -7,9 +7,9 @@ RUN apk add --update alpine-sdk
 ARG go_env
 ENV GO_ENV $go_env
 
-ADD . /go/src/github.com/dongri/gonion
-WORKDIR /go/src/github.com/dongri/gonion
-RUN go install github.com/dongri/gonion
+ADD . /go/src/github.com/dongri/candle
+WORKDIR /go/src/github.com/dongri/candle
+RUN go install github.com/dongri/candle
 
-CMD ["/go/bin/gonion"] 
+CMD ["/go/bin/candle"] 
 EXPOSE 3001

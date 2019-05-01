@@ -7,8 +7,8 @@ import (
 	"github.com/flosch/pongo2"
 	renderLib "github.com/unrolled/render"
 
-	"github.com/dongri/gonion/app/helpers"
-	"github.com/dongri/gonion/config/environments"
+	"github.com/dongri/candle/app/helpers"
+	"github.com/dongri/candle/config/environments"
 )
 
 type contextKey string

@@ -8,7 +8,7 @@ import (
 
 	gorp "gopkg.in/gorp.v1"
 
-	"github.com/dongri/gonion/config/environments"
+	"github.com/dongri/candle/config/environments"
 )
 
 type contextKey string

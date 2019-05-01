@@ -8,8 +8,8 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/mholt/binding"
 
-	"github.com/dongri/gonion/app/middlewares/render"
-	"github.com/dongri/gonion/app/services"
+	"github.com/dongri/candle/app/middlewares/render"
+	"github.com/dongri/candle/app/services"
 )
 
 // Index ...

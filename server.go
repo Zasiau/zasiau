@@ -11,9 +11,9 @@ import (
 	_ "github.com/lib/pq"
 	"gopkg.in/gorp.v1"
 
-	"github.com/dongri/gonion/app"
-	"github.com/dongri/gonion/app/models"
-	"github.com/dongri/gonion/config/environments"
+	"github.com/dongri/candle/app"
+	"github.com/dongri/candle/app/models"
+	"github.com/dongri/candle/config/environments"
 )
 
 const (

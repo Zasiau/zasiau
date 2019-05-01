@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/dongri/gonion/app/middlewares/postgres"
-	"github.com/dongri/gonion/app/models"
+	"github.com/dongri/candle/app/middlewares/postgres"
+	"github.com/dongri/candle/app/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

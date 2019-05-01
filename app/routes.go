@@ -9,13 +9,13 @@ import (
 	"github.com/go-chi/chi/middleware"
 	"gopkg.in/gorp.v1"
 
-	"github.com/dongri/gonion/app/controllers"
-	"github.com/dongri/gonion/app/controllers/product"
-	"github.com/dongri/gonion/app/helpers"
-	"github.com/dongri/gonion/app/middlewares/postgres"
-	"github.com/dongri/gonion/app/middlewares/render"
-	"github.com/dongri/gonion/app/middlewares/session"
-	"github.com/dongri/gonion/config/environments"
+	"github.com/dongri/candle/app/controllers"
+	"github.com/dongri/candle/app/controllers/product"
+	"github.com/dongri/candle/app/helpers"
+	"github.com/dongri/candle/app/middlewares/postgres"
+	"github.com/dongri/candle/app/middlewares/render"
+	"github.com/dongri/candle/app/middlewares/session"
+	"github.com/dongri/candle/config/environments"
 )
 
 var defaultMiddlewares = []func(next http.Handler) http.Handler{
