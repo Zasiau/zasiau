@@ -14,4 +14,4 @@ $ heroku container:push web
 $ heroku container:release web
 ```
 
-https://candle.herokuapp.com
+https://candler.herokuapp.com
