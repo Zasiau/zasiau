@@ -48,3 +48,13 @@ func UpdateProductByID(r *http.Request, ID uint64, name string, price uint32) er
 	product.Price = price
 	return product.Update(dbmap)
 }
+
+// DeleteProductByID ...
+func DeleteProductByID(r *http.Request, ID uint64) error {
+	dbmap := postgres.GetDbMap(r)
+	product, err := models.ProductFindByID(dbmap, ID)
+	if err != nil {
+		return err
+	}
+	return product.Delete(dbmap)
+}

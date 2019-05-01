@@ -6,13 +6,13 @@
 }
 .navbar-brand a {
   font-weight: bolder;
-  color: white;
+  color: black;
 }
 .navbar-brand a:hover {
-  color: white;
+  color: black;
 }
 .navbar-brand > .navbar-item {
-  background: #444;
+  background: #EFEFEF;
   margin: 5px;
   border-radius: 5px;
   padding-top: 0px !important;
@@ -20,7 +20,7 @@
   line-height: 0px !important;
 }
 .navbar-brand > .navbar-item:hover {
-  background: #444 !important;
+  background: #EFEFEF !important;
 }
 
 .body {
@@ -32,8 +32,9 @@
 table {
   width: 100%;
 }
-td {
+th, td {
   padding: 5px;
+  border: 1px solid #EEE;
 }
 .home {
   text-align: center;

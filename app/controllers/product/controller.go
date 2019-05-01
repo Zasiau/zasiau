@@ -138,10 +138,20 @@ func Update(w http.ResponseWriter, r *http.Request) {
 		log.Println(err)
 		return
 	}
-	http.Redirect(w, r, "/products", http.StatusFound)
+	http.Redirect(w, r, "/products/"+ID, http.StatusFound)
 }
 
 // Destroy ...
 func Destroy(w http.ResponseWriter, r *http.Request) {
-
+	ID := chi.URLParam(r, "id")
+	id, err := strconv.ParseUint(ID, 10, 64)
+	if err != nil {
+		log.Println(err)
+		return
+	}
+	if err := services.DeleteProductByID(r, id); err != nil {
+		log.Println(err)
+		return
+	}
+	http.Redirect(w, r, "/products", http.StatusFound)
 }

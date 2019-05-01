@@ -67,7 +67,7 @@ func productRouter() http.Handler {
 	r.Get("/{id}/edit", product.Edit)
 	r.Post("/create", product.Create)
 	r.Post("/{id}", product.Update)
-	r.Delete("/{id}", product.Destroy)
+	r.Get("/{id}/delete", product.Destroy)
 	return r
 }
 

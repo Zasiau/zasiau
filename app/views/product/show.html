@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="account">
-  <h1 class="title is-1">Show Product</h1>
+  <h3 class="title is-3">Show Product</h3>
   <div class="field">
     <label class="label">Name</label>
     <div class="control">{{ product.Name }}</div>
@@ -13,5 +13,6 @@
     <label class="label">Price</label>
     <div class="control">{{ product.Price }}</div>
   </div>
+  <a href="/products" class="button is-text">Back</a>
 </div>
 {% endblock %}

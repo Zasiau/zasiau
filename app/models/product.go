@@ -33,6 +33,13 @@ func (s *Product) Update(exec gorp.SqlExecutor) error {
 	return err
 }
 
+// Delete ...
+func (s *Product) Delete(exec gorp.SqlExecutor) error {
+	s.Updated = time.Now().UTC()
+	_, err := exec.Delete(s)
+	return err
+}
+
 // ProductFindByID ...
 func ProductFindByID(exec gorp.SqlExecutor, ID uint64) (*Product, error) {
 	product := new(Product)
