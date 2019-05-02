@@ -8,7 +8,7 @@ services:
       dockerfile: devDockerfile
     environment:
       - GO_ENV=docker
-      - POSTGRES_URI=${candle_POSTGRES_URI}
+      - POSTGRES_URI=${CANDLE_POSTGRES_URI}
     volumes:
       - .:/go/src/github.com/dongri/candle
     logging:
