@@ -19,6 +19,7 @@
   padding-bottom: 0px !important;
   line-height: 0px !important;
   margin-top: 10px;
+  border: 1px solid #ccc;
 }
 .navbar-brand > .navbar-item:hover {
   background: #EFEFEF !important;
