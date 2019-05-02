@@ -15,3 +15,6 @@ $ heroku container:release web
 ```
 
 https://candler.herokuapp.com
+
+* email: guest@example.com
+* password: password
